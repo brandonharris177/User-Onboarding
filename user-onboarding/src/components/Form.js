@@ -1,12 +1,20 @@
 import React from "react";
-import { Form, Feild, withFormik } from "formik";
+import { Form, Field, withFormik } from "formik";
 // import axios from "axios";
 
 const UserForm = () => {
 
     return (
-        <>
-        </>
+        <div>
+        <Form>
+            <Field component = "input" type = "text" name = "name" placeholder = "name"/>
+            <Field component = "input" type = "email" name = "email" placeholder = "email"/>
+            <Field component = "input" type = "password" name = "password" placeholder = "password"/>
+            <label name = "terms-of-service">Terms of service:</label>
+            <Field component = "input" type = "checkbox" name = "terms-of-service" />
+            <button>Submit</button>
+        </Form>
+        </div>
     );
 };
 
